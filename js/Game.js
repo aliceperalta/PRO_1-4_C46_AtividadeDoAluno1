@@ -53,8 +53,19 @@ class Game {
       { x: width / 2 - 150, y: height - 4300, image: obstacle1Image },
       { x: width / 2, y: height - 5300, image: obstacle1Image },
     ];
-
-  
+    
+       var obsacle2Positions = [
+          { x: width /2 + 250, y: height - 800, image: obstacle2Image },
+          { x: width / 2 - 180, y: height - 2300, image: obstacle2Image },
+          { x: widthh / 2, y: height - 2800, image: obstacle2Image },
+          
+          { x: width / 2 + 180, y: height - 3300, image:obstacle2Image },
+          { x: widht / 2  + 250, y: height - 3800, image: obstacle2Image },
+          { x: widht / 2 + 250, y: height - 4800, image: obstacle2Image },
+          { x: widht /  - 180, y: height - 5500, image: obstacle2Image },
+        ];
+          
+     
     // Adicione o sprite de combustível ao jogo
     this.addSprites(fuels, 4, fuelImage, 0.02);
 
@@ -66,6 +77,13 @@ class Game {
       obstacle1Image,
       0.04,
       obstacle1Positions
+    );
+    this.addSprites(
+      obstacle2,
+      obstacle2Positions.legth,
+      obstacle2Image,
+      0.04,
+      obstacle2Positions
     );
   }
 
